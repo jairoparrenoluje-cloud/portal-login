@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal de Servicios</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: #111;
+    }
+
+    header {
+      background: #062d50;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 13%;
+      color: white;
+    }
+
+    .titulo {
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+
+    .titulo span {
+      font-weight: bold;
+    }
+
+    .usuario {
+      background: white;
+      color: #333;
+      padding: 18px 25px;
+      font-size: 14px;
+      min-width: 420px;
+      text-align: center;
+    }
+
+    nav {
+      margin: 35px auto 0;
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      padding: 16px 22px;
+      border: 1px solid #333;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      background: white;
+      font-size: 18px;
+    }
+
+    nav a.activo {
+      background: #c7eaff;
+    }
+
+    .contenido {
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .banner {
+      background: #ef0040;
+      color: white;
+      width: 470px;
+      height: 520px;
+      padding: 45px;
+      box-sizing: border-box;
+    }
+
+    .banner h1 {
+      font-size: 45px;
+      line-height: 1.35;
+      margin-top: 50px;
+    }
+
+    .opciones {
+      margin-top: 70px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .personas {
+      flex: 1;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: #555;
+      text-align: center;
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="titulo">PORTAL <span>EN LÍNEA</span></div>
+    <div class="usuario">👤 ESTUDIANTE - SIMULACIÓN ☰</div>
+  </header>
+
+  <nav>
+    <a href="#">Matrícula Online / Examen Ubicación</a>
+    <a href="#">Evaluación al Instructor</a>
+    <a class="activo" href="#">Historial Académico</a>
+    <a href="#">Pagos con Tarjetas de Crédito/Débito</a>
+    <a href="#">Facturación Electrónica</a>
+    <a href="#">Certificados Digitales</a>
+  </nav>
+
+  <section class="contenido">
+    <div class="banner">
+      <h1>BIENVENIDOS<br>AL PORTAL DE<br>SERVICIOS</h1>
+
+      <div class="opciones">
+        <div>📝<br>Inscríbete<br>On-line</div>
+        <div>👍👎<br>Evalúa tus<br>instructores</div>
+        <div>📄<br>Revisa tu<br>historial<br>académico</div>
+      </div>
+    </div>
+
+    <div class="personas">
+      Portal de servicios<br>
+      Simulación académica
+    </div>
+  </section>
+
+</body>
+</html>

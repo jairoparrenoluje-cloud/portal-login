@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Portal en Línea</title>
+  <title>Inicio de Sesión</title>
   <style>
     body {
       margin: 0;
@@ -21,7 +21,6 @@
     .logo {
       color: #e8202a;
       font-size: 42px;
-      font-weight: 300;
     }
 
     .contenedor {
@@ -151,18 +150,19 @@
   </main>
 
   <footer>
-    © 2026 CEC-EPN - Todos los derechos reservados.
+    © 2026 CEC-EPN - Simulación académica
   </footer>
 
   <script>
     function iniciarSesion(event) {
       event.preventDefault();
 
-      let usuario = document.getElementById("usuario").value;
-      let password = document.getElementById("password").value;
-      let tipo = document.getElementById("tipo").value;
+      const usuario = document.getElementById("usuario").value;
+      const password = document.getElementById("password").value;
 
-      alert("Usuario: " + usuario + "\nContraseña ingresada\nTipo: " + tipo);
+      if (usuario.trim() !== "" && password.trim() !== "") {
+        window.location.href = "portal.html";
+      }
     }
   </script>
 
