@@ -5,253 +5,200 @@
 <title>Historial Académico</title>
 
 <style>
-
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
 }
 
-/* HEADER */
-
 .header{
-    height:110px;
-    background:#062f52;
-    color:white;
+  height:110px;
+  background:#062f52;
+  color:white;
 }
 
 .header-content{
-    width:85%;
-    height:100%;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+  width:85%;
+  height:100%;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
-    font-size:42px;
-    letter-spacing:1px;
-}
-
-.logo b{
-    font-weight:800;
+  font-size:42px;
 }
 
 .user-box{
-    background:white;
-    color:#333;
-    padding:18px 35px;
-    font-size:15px;
+  background:white;
+  color:#333;
+  padding:18px 35px;
+  font-size:15px;
 }
 
-/* CONTENIDO */
-
 .container{
-    width:85%;
-    margin:35px auto;
+  width:85%;
+  margin:35px auto;
 }
 
 .menu{
-    display:flex;
-    flex-wrap:wrap;
+  display:flex;
+  flex-wrap:wrap;
 }
 
 .menu a{
-    text-decoration:none;
-    color:black;
+  text-decoration:none;
+  color:black;
 }
 
 .menu div{
-    padding:16px 24px;
-    border:1px solid #333;
-    border-bottom:none;
-    border-radius:7px 7px 0 0;
-    background:white;
-    font-size:18px;
+  padding:16px 24px;
+  border:1px solid #333;
+  border-bottom:none;
+  border-radius:7px 7px 0 0;
+  background:white;
+  font-size:18px;
 }
 
-/* PANEL */
-
 .panel{
-    background:white;
-    border:1px solid #ccc;
-    margin-top:50px;
-    padding:25px;
-    box-shadow:0 0 5px rgba(0,0,0,0.2);
+  background:white;
+  border:1px solid #ccc;
+  margin-top:45px;
+  padding:25px;
+  box-shadow:0 0 5px rgba(0,0,0,0.25);
 }
 
 .titulo{
-    font-size:34px;
-    color:#123;
-    border-bottom:1px solid #444;
-    padding-bottom:10px;
+  font-size:34px;
+  color:#123;
+  border-bottom:1px solid #444;
+  padding-bottom:10px;
 }
 
-/* SELECTOR */
-
 .selector{
-    margin-top:35px;
-    background:#f2f2f2;
-    border:1px solid #ccc;
-    text-align:center;
-    padding:18px;
-    font-size:18px;
+  margin-top:30px;
+  background:#f2f2f2;
+  border:1px solid #ccc;
+  text-align:center;
+  padding:18px;
+  font-size:18px;
 }
 
 select{
-    font-size:18px;
-    padding:5px;
+  font-size:18px;
+  padding:5px;
 }
 
 button{
-    padding:8px 25px;
-    background:#e8f5ff;
-    border:1px solid #b5d8ef;
-    color:#1c5c8f;
-    font-size:18px;
-    font-weight:bold;
-    border-radius:4px;
+  padding:8px 25px;
+  background:#e8f5ff;
+  border:1px solid #b5d8ef;
+  color:#1c5c8f;
+  font-size:18px;
+  font-weight:bold;
+  border-radius:4px;
 }
 
-/* TABLA */
-
 .tabla-contenedor{
-    width:78%;
-    margin:25px auto;
-    border:1px solid #7eb8df;
-    overflow:auto;
-    background:white;
+  width:95%;
+  margin:25px auto;
+  border:1px solid #74b6df;
+  overflow:auto;
+  background:white;
 }
 
 .tabla-titulo{
-    background:#79b8df;
-    color:white;
-    font-weight:bold;
-    padding:7px;
+  background:#79b8df;
+  color:white;
+  font-weight:bold;
+  padding:7px;
+  font-size:15px;
 }
 
 table{
-    border-collapse:collapse;
-    width:1400px;
-    font-size:14px;
+  border-collapse:collapse;
+  width:1450px;
+  font-size:14px;
 }
 
 th{
-    background:#eaf5ff;
-    color:#00558f;
-    border:1px solid #a8cfea;
-    padding:8px;
+  background:#e8f5ff;
+  color:#00558f;
+  border:1px solid #9ec9e8;
+  padding:8px;
+  text-align:center;
 }
 
 td{
-    border:1px solid #a8cfea;
-    padding:8px;
-    font-weight:bold;
+  border:1px solid #9ec9e8;
+  padding:8px;
+  font-weight:bold;
+  text-align:center;
+}
+
+td:first-child{
+  text-align:left;
+  width:420px;
 }
 
 tr:nth-child(even){
-    background:#dff0ff;
+  background:#dff0ff;
 }
 
 .curso{
-    color:#00558f;
-    font-weight:bold;
-}
-
-.footer-tabla{
-    background:#e4f2ff;
-    color:#2a6b9d;
-    padding:8px;
-    font-size:14px;
+  color:#00558f;
 }
 
 .highlight{
-    background:#f6ea8c !important;
+  background:#f6ea8c !important;
 }
 
+.footer-tabla{
+  background:#e4f2ff;
+  color:#2a6b9d;
+  padding:8px;
+  font-size:14px;
+}
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header class="header">
-<div class="header-content">
-
-<div class="logo">
-PORTAL <b>EN LÍNEA</b>
-</div>
-
-<div class="user-box">
-👤 GARZÓN AGUILAR DANA ALEJANDRA - ESTUDIANTE ☰
-</div>
-
-</div>
+  <div class="header-content">
+    <div class="logo">PORTAL <b>EN LÍNEA</b></div>
+    <div class="user-box">👤 GARZÓN AGUILAR DANA ALEJANDRA - ESTUDIANTE ☰</div>
+  </div>
 </header>
-
-<!-- CONTENIDO -->
 
 <div class="container">
 
 <nav class="menu">
-
-<a href="matricula.html">
-<div>Matrícula Online / Examen Ubicación</div>
-</a>
-
-<a href="evaluacion.html">
-<div>Evaluación al Instructor</div>
-</a>
-
-<a href="historial.html">
-<div>Historial Académico</div>
-</a>
-
-<a href="pagos.html">
-<div>Pagos con Tarjetas de Crédito/Débito</div>
-</a>
-
-<a href="facturacion.html">
-<div>Facturación Electrónica</div>
-</a>
-
-<a href="certificados.html">
-<div>Certificados Digitales</div>
-</a>
-
+  <a href="matricula.html"><div>Matrícula Online / Examen Ubicación</div></a>
+  <a href="evaluacion.html"><div>Evaluación al Instructor</div></a>
+  <a href="historial.html"><div>Historial Académico</div></a>
+  <a href="pagos.html"><div>Pagos con Tarjetas de Crédito/Débito</div></a>
+  <a href="facturacion.html"><div>Facturación Electrónica</div></a>
+  <a href="certificados.html"><div>Certificados Digitales</div></a>
 </nav>
-
-<!-- PANEL -->
 
 <section class="panel">
 
-<div class="titulo">
-Historial Académico
-</div>
+<div class="titulo">Historial Académico</div>
 
 <div class="selector">
-
 Seleccione entre Estudiante o Representado y de clic en Mostrar para visualizar el historial académico.
-
 <br><br>
-
 <select>
-<option>-Estudiante- GARZON AGUILAR DANA ALEJANDRA</option>
+  <option>-Estudiante- GARZON AGUILAR DANA ALEJANDRA</option>
 </select>
-
 <button>Mostrar</button>
-
 </div>
-
-<!-- TABLA -->
 
 <div class="tabla-contenedor">
 
-<div class="tabla-titulo">
-CURSOS TOMADOS
-</div>
+<div class="tabla-titulo">CURSOS TOMADOS</div>
 
 <table>
 
@@ -272,13 +219,42 @@ CURSOS TOMADOS
 <th>P3</th>
 </tr>
 
-<tr class="highlight">
-<td class="curso">
-EXAMEN DE SUFICIENCIA B1 CICLO 4 2025<br>
-AULA: DISPONIBLE ME<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
+<tr>
+<td class="curso">ACADEMIC FOUR 09:00-11:00 CICLO 2 2026<br>AULA: ME-204<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
+<td>Final</td>
+<td>90.70</td>
+<td>95</td>
+<td>Paso</td>
+<td>No Emitido</td>
+<td>82.5</td>
+<td>94</td>
+<td>88</td>
+<td>91</td>
+<td>SI</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
 
+<tr>
+<td class="curso">ACADEMIC THREE 18:00-20:00 CICLO 5 2025<br>AULA: DISPONIBLE<br>SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO</td>
+<td>Final</td>
+<td>81.475</td>
+<td>95</td>
+<td>Paso</td>
+<td>Emitido</td>
+<td>71</td>
+<td>81.5</td>
+<td>79</td>
+<td>86</td>
+<td>SI</td>
+<td>1.9</td>
+<td>1.2</td>
+<td>1.8</td>
+</tr>
+
+<tr class="highlight">
+<td class="curso">EXAMEN DE SUFICIENCIA B1 CICLO 4 2025<br>AULA: DISPONIBLE ME<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Temporal</td>
 <td>87</td>
 <td>0</td>
@@ -295,12 +271,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-ACADEMIC TWO 18:00-20:00 CICLO 4 2025<br>
-AULA: DISPONIBLE<br>
-SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">ACADEMIC TWO 18:00-20:00 CICLO 4 2025<br>AULA: DISPONIBLE<br>SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Temporal</td>
 <td>8.7</td>
 <td>95</td>
@@ -317,12 +288,7 @@ SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-ACADEMIC ONE 18:00-20:00 CICLO 3 2025<br>
-AULA: En Vivo/Online<br>
-SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">ACADEMIC ONE 18:00-20:00 CICLO 3 2025<br>AULA: En Vivo/Online<br>SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>88.13</td>
 <td>90</td>
@@ -339,12 +305,7 @@ SEDE: En Vivo/Online EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-ADVANCED TWO 07:00-09:00 CICLO 5 2024<br>
-AULA: ME-314<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">ADVANCED TWO 07:00-09:00 CICLO 5 2024<br>AULA: ME-314<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>90.08</td>
 <td>100</td>
@@ -361,12 +322,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-ADVANCED ONE 11:00-13:00 CICLO 4 2024<br>
-AULA: ME-205<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">ADVANCED ONE 11:00-13:00 CICLO 4 2024<br>AULA: ME-205<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>88.65</td>
 <td>95</td>
@@ -383,12 +339,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-INTERMEDIATE TWO 11:00-13:00 CICLO 3 2024<br>
-AULA: ME-112<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">INTERMEDIATE TWO 11:00-13:00 CICLO 3 2024<br>AULA: ME-112<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>87.5</td>
 <td>95</td>
@@ -405,12 +356,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-INTERMEDIATE ONE 11:00-13:00 CICLO 2 2024<br>
-AULA: ME-310<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">INTERMEDIATE ONE 11:00-13:00 CICLO 2 2024<br>AULA: ME-310<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>85.05</td>
 <td>87.5</td>
@@ -427,12 +373,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-BASIC TWO 11:00-13:00 CICLO 1 2024<br>
-AULA: ME-111<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">BASIC TWO 11:00-13:00 CICLO 1 2024<br>AULA: ME-111<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>91.45</td>
 <td>92.5</td>
@@ -449,12 +390,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-BASIC ONE 11:00-13:00 CICLO 5 2023<br>
-AULA: ME-313<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">BASIC ONE 11:00-13:00 CICLO 5 2023<br>AULA: ME-313<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Final</td>
 <td>89.18</td>
 <td>90</td>
@@ -471,12 +407,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </tr>
 
 <tr>
-<td class="curso">
-EXAMEN DE UBICACIÓN INGLÉS CICLO 5 2023<br>
-AULA: DISPONIBLE ME<br>
-SEDE: EPN-AULAS Y MEDIO EXTERNO
-</td>
-
+<td class="curso">EXAMEN DE UBICACIÓN INGLÉS CICLO 5 2023<br>AULA: DISPONIBLE ME<br>SEDE: EPN-AULAS Y MEDIO EXTERNO</td>
 <td>Temporal</td>
 <td>0</td>
 <td>0</td>
@@ -495,9 +426,7 @@ SEDE: EPN-AULAS Y MEDIO EXTERNO
 </table>
 
 <div class="footer-tabla">
-⊞ MOSTRAR ASISTENCIA &nbsp;&nbsp;&nbsp;
-Página 1 de 1 &nbsp;&nbsp;&nbsp;
-Mostrando 1 - 10 de 10
+⊞ MOSTRAR ASISTENCIA &nbsp;&nbsp;&nbsp; Página 1 de 1 &nbsp;&nbsp;&nbsp; Mostrando 1 - 12 de 12
 </div>
 
 </div>
