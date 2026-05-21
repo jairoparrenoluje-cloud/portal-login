@@ -1,143 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portal de Servicios</title>
+<meta charset="UTF-8">
+<title>Portal en Línea</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: white;
-      color: #111;
-    }
+<style>
 
-    header {
-      background: #062d50;
-      height: 110px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 13%;
-      color: white;
-    }
+*{
+box-sizing:border-box;
+}
 
-    .titulo {
-      font-size: 34px;
-      letter-spacing: 1px;
-    }
+body{
+margin:0;
+font-family:Arial;
+background:white;
+}
 
-    .titulo span {
-      font-weight: bold;
-    }
+.header{
+height:115px;
+background:#062f52;
+color:white;
+}
 
-    .usuario {
-      background: white;
-      color: #333;
-      padding: 18px 25px;
-      font-size: 14px;
-      min-width: 420px;
-      text-align: center;
-    }
+.header-content{
+width:85%;
+height:100%;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
 
-    nav {
-      margin: 35px auto 0;
-      width: 75%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+.logo{
+font-size:38px;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #111;
-      padding: 16px 22px;
-      border: 1px solid #333;
-      border-bottom: none;
-      border-radius: 8px 8px 0 0;
-      background: white;
-      font-size: 18px;
-    }
+.user-box{
+background:white;
+color:#333;
+padding:18px 35px;
+font-size:15px;
+}
 
-    nav a.activo {
-      background: #c7eaff;
-    }
+.container{
+width:85%;
+margin:35px auto 0;
+}
 
-    .contenido {
-      width: 75%;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-    }
+.menu{
+display:flex;
+flex-wrap:wrap;
+}
 
-    .banner {
-      background: #ef0040;
-      color: white;
-      width: 470px;
-      height: 520px;
-      padding: 45px;
-      box-sizing: border-box;
-    }
+.menu a{
+text-decoration:none;
+color:black;
+}
 
-    .banner h1 {
-      font-size: 45px;
-      line-height: 1.35;
-      margin-top: 50px;
-    }
+.menu div{
+padding:17px 25px;
+border:1px solid #333;
+border-bottom:none;
+border-radius:7px 7px 0 0;
+font-size:18px;
+background:white;
+}
 
-    .opciones {
-      margin-top: 70px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 20px;
-      text-align: center;
-    }
+.menu .active{
+background:#bfe8ff;
+}
 
-    .personas {
-      flex: 1;
-      height: 520px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 26px;
-      color: #555;
-      text-align: center;
-      background: #fafafa;
-    }
-  </style>
+.main{
+height:600px;
+background-image:url("portal-fondo.png");
+background-size:cover;
+background-position:center top;
+background-repeat:no-repeat;
+}
+
+.footer{
+height:58px;
+background:#062f52;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 8%;
+font-size:16px;
+}
+
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="titulo">PORTAL <span>EN LÍNEA</span></div>
-    <div class="usuario">👤 ESTUDIANTE - SIMULACIÓN ☰</div>
-  </header>
+<header class="header">
+<div class="header-content">
+<div class="logo">PORTAL <b>EN LÍNEA</b></div>
+<div class="user-box">👤 ESTUDIANTE - SIMULACIÓN ☰</div>
+</div>
+</header>
 
-  <nav>
-    <a href="#">Matrícula Online / Examen Ubicación</a>
-    <a href="#">Evaluación al Instructor</a>
-    <a class="activo" href="#">Historial Académico</a>
-    <a href="#">Pagos con Tarjetas de Crédito/Débito</a>
-    <a href="#">Facturación Electrónica</a>
-    <a href="#">Certificados Digitales</a>
-  </nav>
+<div class="container">
 
-  <section class="contenido">
-    <div class="banner">
-      <h1>BIENVENIDOS<br>AL PORTAL DE<br>SERVICIOS</h1>
+<nav class="menu">
 
-      <div class="opciones">
-        <div>📝<br>Inscríbete<br>On-line</div>
-        <div>👍👎<br>Evalúa tus<br>instructores</div>
-        <div>📄<br>Revisa tu<br>historial<br>académico</div>
-      </div>
-    </div>
+<a href="matricula.html">
+<div>Matrícula Online / Examen Ubicación</div>
+</a>
 
-    <div class="personas">
-      Portal de servicios<br>
-      Simulación académica
-    </div>
-  </section>
+<a href="evaluacion.html">
+<div>Evaluación al Instructor</div>
+</a>
+
+<a href="historial.html">
+<div class="active">Historial Académico</div>
+</a>
+
+<a href="pagos.html">
+<div>Pagos con Tarjetas de Crédito/Débito</div>
+</a>
+
+<a href="facturacion.html">
+<div>Facturación Electrónica</div>
+</a>
+
+<a href="certificados.html">
+<div>Certificados Digitales</div>
+</a>
+
+</nav>
+
+<section class="main"></section>
+
+</div>
+
+<footer class="footer">
+<div>© Instituto de Idiomas CEC-EPN</div>
+<div>Síguenos en: Facebook Instagram YouTube</div>
+</footer>
 
 </body>
 </html>

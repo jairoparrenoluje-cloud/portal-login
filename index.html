@@ -1,170 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Inicio de Sesión</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      text-align: center;
-      color: #0b2a55;
-    }
+<meta charset="UTF-8">
+<title>Portal CEC-EPN</title>
 
-    header {
-      background: white;
-      border-bottom: 1px solid #0b2a55;
-      padding: 20px;
-    }
+<style>
 
-    .logo {
-      color: #e8202a;
-      font-size: 42px;
-    }
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f1f1f1;
+    text-align:center;
+}
 
-    .contenedor {
-      margin-top: 70px;
-    }
+header{
+    background:white;
+    padding:20px;
+    border-bottom:1px solid #0a2b52;
+}
 
-    .portal {
-      font-size: 42px;
-      letter-spacing: 3px;
-      margin-bottom: 40px;
-    }
+.logo{
+    color:#ef233c;
+    font-size:55px;
+}
 
-    .portal span {
-      display: block;
-      color: #e8202a;
-      font-size: 18px;
-      letter-spacing: 12px;
-      margin-top: 5px;
-    }
+.container{
+    margin-top:70px;
+}
 
-    input, select {
-      width: 430px;
-      padding: 18px;
-      margin: 10px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      text-align: center;
-      background: white;
-    }
+.portal{
+    font-size:55px;
+    color:#0a2b52;
+}
 
-    select {
-      font-family: Georgia, serif;
-      font-weight: bold;
-      letter-spacing: 5px;
-    }
+.portal span{
+    color:#ef233c;
+    display:block;
+    letter-spacing:10px;
+    font-size:18px;
+}
 
-    button {
-      margin-top: 20px;
-      padding: 18px 45px;
-      background: #08264a;
-      color: white;
-      border: none;
-      font-size: 18px;
-      cursor: pointer;
-    }
+input, select{
+    width:430px;
+    padding:18px;
+    margin:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+    text-align:center;
+}
 
-    button:hover {
-      background: #0d3a70;
-    }
+button{
+    background:#062f52;
+    color:white;
+    border:none;
+    padding:18px 50px;
+    margin-top:20px;
+    font-size:20px;
+    cursor:pointer;
+}
 
-    .olvido {
-      color: #ef1744;
-      font-weight: bold;
-      font-size: 18px;
-      margin-top: 20px;
-    }
+button:hover{
+    background:#0c467a;
+}
 
-    hr {
-      width: 430px;
-      margin: 30px auto;
-      border: 1px solid #777;
-    }
+.footer{
+    margin-top:60px;
+    background:#062f52;
+    color:white;
+    padding:20px;
+}
 
-    .nuevo {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .registro {
-      background: #ef1744;
-      border: 1px solid #08264a;
-      width: 260px;
-    }
-
-    footer {
-      margin-top: 60px;
-      background: #08264a;
-      color: white;
-      padding: 20px;
-      font-size: 16px;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">cec<span style="color:#888;">•</span>epn</div>
-  </header>
+<header>
+<div class="logo">cec•epn</div>
+</header>
 
-  <main class="contenedor">
+<div class="container">
 
-    <div class="portal">
-      PORTAL
-      <span>EN LÍNEA</span>
-    </div>
+<div class="portal">
+PORTAL
+<span>EN LÍNEA</span>
+</div>
 
-    <form onsubmit="iniciarSesion(event)">
-      <input type="text" id="usuario" placeholder="CÉDULA/RUC O PASAPORTE" required>
-      <br>
+<form onsubmit="login(event)">
 
-      <input type="password" id="password" placeholder="CONTRASEÑA" required>
-      <br>
+<input type="text" placeholder="CÉDULA/RUC O PASAPORTE" required>
+<br>
 
-      <select id="tipo">
-        <option>ESTUDIANTE</option>
-        <option>DOCENTE</option>
-        <option>ADMINISTRATIVO</option>
-      </select>
-      <br>
+<input type="password" placeholder="CONTRASEÑA" required>
+<br>
 
-      <button type="submit">INICIAR SESIÓN</button>
-    </form>
+<select>
+<option>ESTUDIANTE</option>
+<option>DOCENTE</option>
+<option>ADMINISTRATIVO</option>
+</select>
 
-    <div class="olvido">¿Olvidó su contraseña?</div>
+<br>
 
-    <hr>
+<button type="submit">INICIAR SESIÓN</button>
 
-    <div class="nuevo">
-      ¿Eres nuevo aquí?<br>
-      Examen de ubicación o matrícula
-    </div>
+</form>
 
-    <button class="registro">REGÍSTRATE</button>
+</div>
 
-  </main>
+<div class="footer">
+© 2026 CEC-EPN
+</div>
 
-  <footer>
-    © 2026 CEC-EPN - Simulación académica
-  </footer>
+<script>
 
-  <script>
-    function iniciarSesion(event) {
-      event.preventDefault();
+function login(event){
+event.preventDefault();
+window.location.href="portal.html";
+}
 
-      const usuario = document.getElementById("usuario").value;
-      const password = document.getElementById("password").value;
-
-      if (usuario.trim() !== "" && password.trim() !== "") {
-        window.location.href = "portal.html";
-      }
-    }
-  </script>
+</script>
 
 </body>
 </html>
